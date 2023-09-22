@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+ <head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="content-language" content="pt-br" />    
+	  <link rel="stylesheet" type="text/css" href="css/reset.css">
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
+ </head>
+
+<body>
+
+  <header>
+    <a href="#pagamento-pix" class="header-container-pix center-flex">
+      <h2 class="subtitle">ACEITAMOS <b>PAGAMENTOS</b> COM</h2>
+      <img src="imagens/imagens-header/pix-icon.png" alt="imagem da logo pix">
+    </a>
+
+    <div class="header-container-menu center-flex">
+      <img src="imagens/imagens-header/icon-logo.png" alt="logo da Be">
+      <!--<img src="imagens/imagens-header/icon-logo-pq.png" alt="logo da Be">-->
+      <div id="divBusca" class="center-flex">
+        <input type="text" id="txtBusca" placeholder="DIGITE AQUI O QUE VOCÊ PROCURA..."/>
+        <img src="imagens/imagens-header/lupa.png" alt="imagem de uma lupa" id="lupa">
+      </div>
+      <div class="grupos-info center-flex">
+        <a href="#login">
+          <img src="imagens/imagens-header/user-icon.png" alt="imagem de icone de pessoa">
+          <h2 class="subtitle"><b>ENTRE</b> OU<br>CADASTRE</h2>
+        </a>
+        <a href="#contato">
+          <img src="imagens/imagens-header/Icon-telefone.png" alt="icone de telefone">
+          <h2 class="subtitle"><b>CONTATO</b><br>(11)987937983</h2>
+        </a>
+        <a href="#compras">
+          <img src="imagens/imagens-header/Icon-Compra.png" alt="icone de carrinho de compra">
+          <h2 class="subtitle"><b>MEU CARRINHO</b><br>R$ 000,00</h2>
+        </a>
+      </div>
+    </div>
+
+    <nav class="navbar center-flex subtitle">
+      <a href="#toalhas"><img src="imagens/imagens-nav/toalha-icon.png" alt="toalha-icon">TOALHAS</a>
+      <a href="#roupao" ><img src="imagens/imagens-nav/roupao-icon.png" alt="roupao-icon">ROUPÃO</a> 
+      <a href="#tapetes"><img src="imagens/imagens-nav/tapete.png" alt="tapete.png">TAPETES</a>
+      <a href="#edredom"><img src="imagens/imagens-nav/endredom-icon.png" alt="endredom-icon">EDREDOM</a>
+      <a href="#lencol" ><img src="imagens/imagens-nav/lencol.png" alt="lencol.png">LENÇOL</a>
+      <a href="#pano" ><img src="imagens/imagens-nav/pano.png" alt="pano.png">PANO</a>
+      <a href="#toalha-mesa" ><img src="imagens/imagens-nav/toalha-de-mesa-icon.png" alt="toalha-de-mesa-icon">TOALHA DE MESA</a>
+      <a href="#promocao"><img src="imagens/imagens-nav/banner-promocao.png" alt="banner promocao"></a>
+    </nav>
+
+  </header>
+
+  <div class="slide-container">
+    <div class="carousel-slide">
+      <img src="imagens/slide-principal/fbprincipal.png" alt="Imagem 1">
+      <img src="imagens/slide-principal/fbanner01.png" alt="Imagem 2">
+      <img src="imagens/slide-principal/fbanner02.png" alt="Imagem 3">
+      <img src="imagens/slide-principal/fbanner03.png" alt="Imagem 3">
+    </div>
+  </div>
+  
+  <nav class="navbar-conteudo center-flex subtitle">
+    <a href="#toalhas"><img src="imagens/nav-info/entrega-icon.png" alt="entrega-icon">ENTREGAS PARA TODO O BRASIL</a>
+    <img src="imagens/nav-info/Elipse 21.png" alt="">
+    <a href="#roupao" ><img src="imagens/nav-info/cadeado-icon.png" alt="cadeado-icon">SITE 100% SEGURO</a> 
+    <img src="imagens/nav-info/Elipse 21.png" alt="">
+    <a href="#tapetes"><img src="imagens/nav-info/delivery-icon.png" alt="delivery-icon">FRETE GRÁTIS EM COMPRAS A PARTIR DE R$ 100,00</a>
+    <img src="imagens/nav-info/Elipse 21.png" alt="">
+    <a href="#edredom"><img src="imagens/nav-info/card-icon.png" alt="card-icon">PARCELAS EM ATé 12x SEM JUROS</a>
+  </nav>
+
+  <div class="mine-banner-container">
+    <div class="mini-banner center-flex">
+      <a href="#JododeCama"><img src="imagens/miniBanner/Jogo-de-Cama.png" alt="Imagem 1"></a>
+      <a href="#toalhasDeMesa"> <img src="imagens/miniBanner/Toalha-de-mesa.png" alt="Imagem 2"></a>
+        <a href="#toalhas"><img src="imagens/miniBanner/Toalhas.png" alt="Imagem 3"></a>
+    </div>
+  </div>
+
+
+  <div class="product-carousel">
+    <button class="prev-button" ><img src="img-produtos/seta-e.png" alt=""></button>
+    <div class="carousel-container">
+      <ul class="product-list">
+        <li class="product-item" onmouseover="expandProduct(this)" onmouseout="shrinkProduct(this)">
+          <a class="product-link">
+              <figure class="product-info">
+                  <div class="product-info-img">
+                      <img src="img-produtos/produto-1.png" alt="description image">
+                  </div>
+                  <figcaption class="product-info-description">
+                      <h2 class="title">Lorem ipsum dolor sit amet,<br>consetetur sadipscing </h2>
+                      <div class="price">
+                          <div class="flex">
+                              <del>R$19,00</del>
+                              <ins class="d-block">R$19,00</ins>
+                          </div>
+                          <span class="price-info">Em até <b>12x</b> sem juros no <br>cartão</span>
+                      </div>
+                      <p class="description">Ou por r$ 10,00 a vista no boleto</p>
+                  </figcaption>
+                      <div class="center">
+                          <span class="product-quantity flex">
+                              <button class="quantity-button" onclick="decrementQuantity(this)">↓</button>
+                              <span class="quantity-value">0</span>
+                              <button class="quantity-button" onclick="incrementQuantity(this)">↑</button>
+                          </span>
+                          <button href="#" class="btn btn-buy" onclick="incrementQuantity(this)">Adicionar</button>
+                      </div>
+              </figure>
+          </a>
+        </li>
+    
+        <li class="product-item" onmouseover="expandProduct(this)" onmouseout="shrinkProduct(this)">
+          <a class="product-link">
+              <figure class="product-info">
+                  <div class="product-info-img">
+                      <img src="img-produtos/produto-2.png" alt="description image">
+                  </div>
+                  <figcaption class="product-info-description">
+                      <h2 class="title">Lorem ipsum dolor sit amet,<br>consetetur sadipscing </h2>
+                      <div class="price">
+                          <div class="flex">
+                              <del>R$19,00</del>
+                              <ins class="d-block">R$19,00</ins>
+                          </div>
+                          <span class="price-info">Em até 12x sem juros no <br>cartão</span>
+                      </div>
+                      <p class="description">Ou por r$ 10,00 a vista no boleto</p>
+                  </figcaption>
+                      <div class="center">
+                          <span class="product-quantity flex">
+                              <button class="quantity-button" onclick="decrementQuantity(this)">↓</button>
+                              <span class="quantity-value">0</span>
+                              <button class="quantity-button" onclick="incrementQuantity(this)">↑</button>
+                          </span>
+                          <button href="#" class="btn btn-buy" onclick="incrementQuantity(this)">Adicionar</button>
+                      </div>
+              </figure>
+          </a>
+        </li>
+    
+        <li class="product-item" onmouseover="expandProduct(this)" onmouseout="shrinkProduct(this)">
+          <a class="product-link">
+              <figure class="product-info">
+                  <div class="product-info-img">
+                      <img src="img-produtos/produto-3.png" alt="description image">
+                  </div>
+                  <figcaption class="product-info-description">
+                      <h2 class="title">Lorem ipsum dolor sit amet,<br>consetetur sadipscing </h2>
+                      <div class="price">
+                          <div class="flex">
+                              <del>R$19,00</del>
+                              <ins class="d-block">R$19,00</ins>
+                          </div>
+                          <span class="price-info">Em até 12x sem juros no <br>cartão</span>
+                      </div>
+                      <p class="description">Ou por r$ 10,00 a vista no boleto</p>
+                  </figcaption>
+                      <div class="center">
+                          <span class="product-quantity flex">
+                              <button class="quantity-button" onclick="decrementQuantity(this)">↓</button>
+                              <span class="quantity-value">0</span>
+                              <button class="quantity-button" onclick="incrementQuantity(this)">↑</button>
+                          </span>
+                          <button href="#" class="btn btn-buy" onclick="incrementQuantity(this)">Adicionar</button>
+                      </div>
+              </figure>
+          </a>
+        </li>
+    
+        <li class="product-item" onmouseover="expandProduct(this)" onmouseout="shrinkProduct(this)">
+          <a class="product-link">
+              <figure class="product-info">
+                  <div class="product-info-img">
+                      <img src="img-produtos/produto-4.png" alt="description image">
+                  </div>
+                  <figcaption class="product-info-description">
+                      <h2 class="title">Lorem ipsum dolor sit amet,<br>consetetur sadipscing </h2>
+                      <div class="price">
+                          <div class="flex">
+                              <del>R$19,00</del>
+                              <ins class="d-block">R$19,00</ins>
+                          </div>
+                          <span class="price-info">Em até 12x sem juros no <br>cartão</span>
+                      </div>
+                      <p class="description">Ou por r$ 10,00 a vista no boleto</p>
+                  </figcaption>
+                      <div class="center">
+                          <span class="product-quantity flex">
+                              <button class="quantity-button" onclick="decrementQuantity(this)">↓</button>
+                              <span class="quantity-value">0</span>
+                              <button class="quantity-button" onclick="incrementQuantity(this)">↑</button>
+                          </span>
+                          <button href="#" class="btn btn-buy" onclick="incrementQuantity(this)">Adicionar</button>
+                      </div>
+              </figure>
+          </a>
+        </li>
+    
+      </ul>
+    </div> 
+    <button class="next-button"><img src="img-produtos/seta-d.png" alt=""></button>
+  </div>
+
+  <div class="mine-banner-container">
+    <div class="mini-banner center-flex">
+      <a href="#Tapetes"><img src="imagens/miniBanner/Vitrine - 01.png" alt="Imagem 1"></a>
+      <a href="#Roupao"> <img src="imagens/miniBanner/Vitrine - 04.png" alt="Imagem 2"></a>
+        <a href="#toalhasDeMesa"><img src="imagens/miniBanner/Vitrine -05.png" alt="Imagem 3"></a>
+    </div>
+  </div>
+
+  <main class="flex">
+
+    <section class="section-seu-codigo container">
+        <div class="content">
+            <h1 class="section_title"><img class="icon" src="img/icon-insta.png" alt="logo-instagram"> <b>SIGA NOS NO   INSTAGRAM</b> @befashion</h1>
+
+            <div class="box-artigo">
+
+                <!--Carrossel começa-->
+                <div class="bxCarrosel">
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta-1.png" title="produto-insta">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta- 2.png" title="produto-insta">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta- 3.png" title="produto-insta">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta- 4.png" title="produto-insta">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta- 2.png" title="produto-insta">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta-1.png" title="produto-insta">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta- 2.png" title="produto-insta">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta- 3.png" title="produto-insta">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta- 4.png" title="produto-insta">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta- 2.png" title="produto-insta">
+                      </div>
+                    </article>
+                </div>
+            </div>
+        <div class="clear"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="product-carousel">
+    <button class="prev-button" ><img src="img-produtos/seta-e.png" alt="seta"></button>
+    <div class="carousel-container">
+      <ul class="product-list">
+        <li class="product-item" onmouseover="expandProduct(this)" onmouseout="shrinkProduct(this)">
+          <a class="product-link">
+              <figure class="product-info">
+                  <div class="product-info-img">
+                      <img src="img-produtos/produto-1.png" alt="description image">
+                  </div>
+                  <figcaption class="product-info-description">
+                      <h2 class="title">Lorem ipsum dolor sit amet,<br>consetetur sadipscing </h2>
+                      <div class="price">
+                          <div class="flex">
+                              <del>R$19,00</del>
+                              <ins class="d-block">R$19,00</ins>
+                          </div>
+                          <span class="price-info">Em até <b>12x</b> sem juros no <br>cartão</span>
+                      </div>
+                      <p class="description">Ou por r$ 10,00 a vista no boleto</p>
+                  </figcaption>
+                      <div class="center">
+                          <span class="product-quantity flex">
+                              <button class="quantity-button" onclick="decrementQuantity(this)">↓</button>
+                              <span class="quantity-value">0</span>
+                              <button class="quantity-button" onclick="incrementQuantity(this)">↑</button>
+                          </span>
+                          <button href="#" class="btn btn-buy" onclick="incrementQuantity(this)">Adicionar</button>
+                      </div>
+              </figure>
+          </a>
+        </li>
+    
+        <li class="product-item" onmouseover="expandProduct(this)" onmouseout="shrinkProduct(this)">
+          <a class="product-link">
+              <figure class="product-info">
+                  <div class="product-info-img">
+                      <img src="img-produtos/produto-2.png" alt="description image">
+                  </div>
+                  <figcaption class="product-info-description">
+                      <h2 class="title">Lorem ipsum dolor sit amet,<br>consetetur sadipscing </h2>
+                      <div class="price">
+                          <div class="flex">
+                              <del>R$19,00</del>
+                              <ins class="d-block">R$19,00</ins>
+                          </div>
+                          <span class="price-info">Em até 12x sem juros no <br>cartão</span>
+                      </div>
+                      <p class="description">Ou por r$ 10,00 a vista no boleto</p>
+                  </figcaption>
+                      <div class="center">
+                          <span class="product-quantity flex">
+                              <button class="quantity-button" onclick="decrementQuantity(this)">↓</button>
+                              <span class="quantity-value">0</span>
+                              <button class="quantity-button" onclick="incrementQuantity(this)">↑</button>
+                          </span>
+                          <button href="#" class="btn btn-buy" onclick="incrementQuantity(this)">Adicionar</button>
+                      </div>
+              </figure>
+          </a>
+        </li>
+    
+        <li class="product-item" onmouseover="expandProduct(this)" onmouseout="shrinkProduct(this)">
+          <a class="product-link">
+              <figure class="product-info">
+                  <div class="product-info-img">
+                      <img src="img-produtos/produto-3.png" alt="description image">
+                  </div>
+                  <figcaption class="product-info-description">
+                      <h2 class="title">Lorem ipsum dolor sit amet,<br>consetetur sadipscing </h2>
+                      <div class="price">
+                          <div class="flex">
+                              <del>R$19,00</del>
+                              <ins class="d-block">R$19,00</ins>
+                          </div>
+                          <span class="price-info">Em até 12x sem juros no <br>cartão</span>
+                      </div>
+                      <p class="description">Ou por r$ 10,00 a vista no boleto</p>
+                  </figcaption>
+                      <div class="center">
+                          <span class="product-quantity flex">
+                              <button class="quantity-button" onclick="decrementQuantity(this)">↓</button>
+                              <span class="quantity-value">0</span>
+                              <button class="quantity-button" onclick="incrementQuantity(this)">↑</button>
+                          </span>
+                          <button href="#" class="btn btn-buy" onclick="incrementQuantity(this)">Adicionar</button>
+                      </div>
+              </figure>
+          </a>
+        </li>
+    
+        <li class="product-item" onmouseover="expandProduct(this)" onmouseout="shrinkProduct(this)">
+          <a class="product-link">
+              <figure class="product-info">
+                  <div class="product-info-img">
+                      <img src="img-produtos/produto-4.png" alt="description image">
+                  </div>
+                  <figcaption class="product-info-description">
+                      <h2 class="title">Lorem ipsum dolor sit amet,<br>consetetur sadipscing </h2>
+                      <div class="price">
+                          <div class="flex">
+                              <del>R$19,00</del>
+                              <ins class="d-block">R$19,00</ins>
+                          </div>
+                          <span class="price-info">Em até 12x sem juros no <br>cartão</span>
+                      </div>
+                      <p class="description">Ou por r$ 10,00 a vista no boleto</p>
+                  </figcaption>
+                      <div class="center">
+                          <span class="product-quantity flex">
+                              <button class="quantity-button" onclick="decrementQuantity(this)">↓</button>
+                              <span class="quantity-value">0</span>
+                              <button class="quantity-button" onclick="incrementQuantity(this)">↑</button>
+                          </span>
+                          <button href="#" class="btn btn-buy" onclick="incrementQuantity(this)">Adicionar</button>
+                      </div>
+              </figure>
+          </a>
+        </li>
+    
+      </ul>
+    </div> 
+    <button class="next-button"><img src="img-produtos/seta-d.png" alt=""></button>
+  </div>
+
+
+  <div class="video-container center-flex">
+    <video controls class="video-responsivo">
+        <source src="videos/seuvideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <img src="video/fallback.png" alt="Imagem de fallback" class="video-fallback">
+  </div>
+
+  <div class="product-carousel">
+    <button class="prev-button" ><img src="img-produtos/seta-e.png" alt=""></button>
+    <div class="carousel-container">
+      <ul class="product-list">
+        <li class="product-item" onmouseover="expandProduct(this)" onmouseout="shrinkProduct(this)">
+          <a class="product-link">
+              <figure class="product-info">
+                  <div class="product-info-img">
+                      <img src="img-produtos/produto-1.png" alt="description image">
+                  </div>
+                  <figcaption class="product-info-description">
+                      <h2 class="title">Lorem ipsum dolor sit amet,<br>consetetur sadipscing </h2>
+                      <div class="price">
+                          <div class="flex">
+                              <del>R$19,00</del>
+                              <ins class="d-block">R$19,00</ins>
+                          </div>
+                          <span class="price-info">Em até <b>12x</b> sem juros no <br>cartão</span>
+                      </div>
+                      <p class="description">Ou por r$ 10,00 a vista no boleto</p>
+                  </figcaption>
+                      <div class="center">
+                          <span class="product-quantity flex">
+                              <button class="quantity-button" onclick="decrementQuantity(this)">↓</button>
+                              <span class="quantity-value">0</span>
+                              <button class="quantity-button" onclick="incrementQuantity(this)">↑</button>
+                          </span>
+                          <button href="#" class="btn btn-buy" onclick="incrementQuantity(this)">Adicionar</button>
+                      </div>
+              </figure>
+          </a>
+        </li>
+    
+        <li class="product-item" onmouseover="expandProduct(this)" onmouseout="shrinkProduct(this)">
+          <a class="product-link">
+              <figure class="product-info">
+                  <div class="product-info-img">
+                      <img src="img-produtos/produto-2.png" alt="description image">
+                  </div>
+                  <figcaption class="product-info-description">
+                      <h2 class="title">Lorem ipsum dolor sit amet,<br>consetetur sadipscing </h2>
+                      <div class="price">
+                          <div class="flex">
+                              <del>R$19,00</del>
+                              <ins class="d-block">R$19,00</ins>
+                          </div>
+                          <span class="price-info">Em até 12x sem juros no <br>cartão</span>
+                      </div>
+                      <p class="description">Ou por r$ 10,00 a vista no boleto</p>
+                  </figcaption>
+                      <div class="center">
+                          <span class="product-quantity flex">
+                              <button class="quantity-button" onclick="decrementQuantity(this)">↓</button>
+                              <span class="quantity-value">0</span>
+                              <button class="quantity-button" onclick="incrementQuantity(this)">↑</button>
+                          </span>
+                          <button href="#" class="btn btn-buy" onclick="incrementQuantity(this)">Adicionar</button>
+                      </div>
+              </figure>
+          </a>
+        </li>
+    
+        <li class="product-item" onmouseover="expandProduct(this)" onmouseout="shrinkProduct(this)">
+          <a class="product-link">
+              <figure class="product-info">
+                  <div class="product-info-img">
+                      <img src="img-produtos/produto-3.png" alt="description image">
+                  </div>
+                  <figcaption class="product-info-description">
+                      <h2 class="title">Lorem ipsum dolor sit amet,<br>consetetur sadipscing </h2>
+                      <div class="price">
+                          <div class="flex">
+                              <del>R$19,00</del>
+                              <ins class="d-block">R$19,00</ins>
+                          </div>
+                          <span class="price-info">Em até 12x sem juros no <br>cartão</span>
+                      </div>
+                      <p class="description">Ou por r$ 10,00 a vista no boleto</p>
+                  </figcaption>
+                      <div class="center">
+                          <span class="product-quantity flex">
+                              <button class="quantity-button" onclick="decrementQuantity(this)">↓</button>
+                              <span class="quantity-value">0</span>
+                              <button class="quantity-button" onclick="incrementQuantity(this)">↑</button>
+                          </span>
+                          <button href="#" class="btn btn-buy" onclick="incrementQuantity(this)">Adicionar</button>
+                      </div>
+              </figure>
+          </a>
+        </li>
+    
+        <li class="product-item" onmouseover="expandProduct(this)" onmouseout="shrinkProduct(this)">
+          <a class="product-link">
+              <figure class="product-info">
+                  <div class="product-info-img">
+                      <img src="img-produtos/produto-4.png" alt="description image">
+                  </div>
+                  <figcaption class="product-info-description">
+                      <h2 class="title">Lorem ipsum dolor sit amet,<br>consetetur sadipscing </h2>
+                      <div class="price">
+                          <div class="flex">
+                              <del>R$19,00</del>
+                              <ins class="d-block">R$19,00</ins>
+                          </div>
+                          <span class="price-info">Em até 12x sem juros no <br>cartão</span>
+                      </div>
+                      <p class="description">Ou por r$ 10,00 a vista no boleto</p>
+                  </figcaption>
+                      <div class="center">
+                          <span class="product-quantity flex">
+                              <button class="quantity-button" onclick="decrementQuantity(this)">↓</button>
+                              <span class="quantity-value">0</span>
+                              <button class="quantity-button" onclick="incrementQuantity(this)">↑</button>
+                          </span>
+                          <button href="#" class="btn btn-buy" onclick="incrementQuantity(this)">Adicionar</button>
+                      </div>
+              </figure>
+          </a>
+        </li>
+    
+      </ul>
+    </div> 
+    <button class="next-button"><img src="img-produtos/seta-d.png" alt=""></button>
+  </div>
+
+  <main class="flex">
+
+    <section class="section-seu-codigo container">
+        <div class="content">
+            <h1 class="section_title"><img class="icon" src="img/icon-insta.png" alt="logo-instagram"> <b>SIGA NOS NO   INSTAGRAM</b> @befashion</h1>
+
+            <div class="box-artigo">
+
+                <!--Carrossel começa-->
+                <div class="bxCarrosel">
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta-1.png" title="Loop Nerd">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta- 2.png" title="Loop Nerd">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta- 3.png" title="Loop Nerd">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta- 4.png" title="Loop Nerd">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta- 2.png" title="Loop Nerd">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta-1.png" title="Loop Nerd">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta- 2.png" title="Loop Nerd">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta- 3.png" title="Loop Nerd">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta- 4.png" title="Loop Nerd">
+                      </div>
+                    </article>
+                    <article class="blocoArtigo">
+
+                      <div class="mascara">
+                        <img src="uploads/produto-insta- 2.png" title="Loop Nerd">
+                      </div>
+                    </article>
+                </div>
+            </div>
+        <div class="clear"></div>
+      </div>
+    </section><!--FECHA BOX HTML-->
+
+  </main>
+
+  <div class="captura center-flex">
+    <div class="assine center-flex">
+      <a href="#assine-promocao">
+        <img src="img/icon-documento.png" alt="imagem de icone de pessoa" style="max-width: 63px;">
+        <h2 class="subtitle"><b>ASSINE NOSSA NEWSLETTER</b><br>E RECEBA NOSSAS PROMOÇões</h2>
+      </a>
+    </div>
+    <div id="divBusca" class="center-flex">
+      <input type="text" id="txtBusca" placeholder="DIGITE SEU E-MAIL"/>
+      <img src="imagens/imagens-header/lupa.png" alt="imagem de uma lupa" id="lupa">
+    </div>
+    <button>ENVIAR</button>
+  </div>
+  
+  <footer class="main_footer container">
+        
+    <div class="content-footer">
+        
+        <div class="colfooter menu">
+            
+            <h4 class="titleFooter"><img src="footer-img/logo-footer.png" alt=""></h4>
+            
+            <ul>
+            
+              <li><a href="#" title="Página Inícial">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</a></li>
+            
+            </ul>
+
+            <button>SAIBA MAIS</button>
+        
+        </div><!--Col Footer 1-->        
+        
+        <div class="colfooter">
+           
+           <h4 class="titleFooter">Categorias</h4>
+           <p>Roupas</p>
+           <p>CAMISETAS</p>
+           <p>CALÇAS JEANS</p>
+           <p>TOCAS</p>
+           <p>BLUSAS</p>
+           <p>SHORTS</p>
+           <p>CONJUNTOS</p>
+           <p>MOLETONS</p>
+           <p>NOSSAS MARCASh</p>
+        </div><!--Col Footer 2-->
+
+        <div class="colfooter">
+           
+            <h4 class="titleFooter">Sobre Nós</h4>
+            
+            <a href="#" class="redesocial"><span>Fale conosco</span></a>            
+            <a href="#" class="redesocial"><span>Sobre este tema</span></a>            
+            <a href="#" class="redesocial"><span>Politica de trocas</span></a>            
+            <a href="#" class="redesocial"><span>Formas de envio</span></a>  
+            <a href="#" class="redesocial"><span>FORMAS DE PAGAMENTO</span></a>  
+            <a href="#" class="redesocial"><span>SEGURANÇA E PRIVACIDADE</span></a>  
+        
+        </form>
+        
+        </div><!--Col Footer 3-->
+
+        <div class="colfooter">
+           
+            <h4 class="titleFooter">Contato</h4>
+            <p><i class="icon"></i>TELEFONE: (11) 9999 0000</p>
+            <p><i class="icon"></i>WHATSAPP: (11) 9999 0000</p>
+            <p><i class="icon"></i>LOREMIPSUM@HOTMAIL.COM</p>
+            <p><i class="icon"></i>SEG A SEX DAS 7H AS 22H</p>
+         </div><!--Col Footer 2-->
+        
+        
+        <div class="clear"></div>
+    
+    </div><!--Contant-->
+    
+    <div class="main_footer_copy">
+        
+        <p class="m-b-footer">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p> 
+
+        <div class="patrocinio">
+            <img src="footer-img/beep-digital.png" alt="mini logo beep-digital">
+            <img src="footer-img/loja-integrada-patrocinio.png" alt="patrocinio loja">
+        </div>
+
+    
+    </div>
+
+  </footer>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bxslider.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
